@@ -396,17 +396,17 @@ hr {
 
       // Adjust font size for bigger numbers
       @if $power >= 100 and $power < 1000 {
-        font-size: 45px;
+        font-size: 0px;
 
         // Media queries placed here to avoid carrying over the rest of the logic
         @include smaller($mobile-threshold) {
           font-size: 25px;
         }
       } @else if $power >= 1000 {
-        font-size: 35px;
+        font-size: 0px;
 
         @include smaller($mobile-threshold) {
-          font-size: 15px;
+          font-size: 0px;
         }
       }
     }
@@ -544,7 +544,7 @@ hr {
 
   // Rest of the font-size adjustments in the tile class
   .tile .tile-inner {
-    font-size: 1px;
+    font-size: 0px;
   }
 
   .game-message {
@@ -563,44 +563,60 @@ hr {
 
 .tile.tile-2 .tile-inner {
   background: $prof1;
+  background-size: cover;
 }
 
 .tile.tile-4 .tile-inner {
   background: $prof2;
+  background-size: cover;
 }
 
 .tile.tile-8 .tile-inner {
   background: $prof3;
+  background-size: cover;
 }
 
 .tile.tile-16 .tile-inner {
   background: $prof4;
+  background-size: cover;
 }
 
 .tile.tile-32 .tile-inner {
   background: $prof5;
+  background-size: cover;
 }
 
 .tile.tile-64 .tile-inner {
   background: $prof6;
+  background-size: cover;
 }
 
 .tile.tile-128 .tile-inner {
   background: $prof7;
+  background-size: cover;
 }
 
 .tile.tile-256 .tile-inner {
   background: $prof8;
+  background-size: cover;
 }
 
 .tile.tile-512 .tile-inner {
   background: $prof9;
+  background-size: cover;
 }
 
 .tile.tile-1024 .tile-inner {
   background: $prof10;
+  background-size: cover;
 }
 
 .tile.tile-2048 .tile-inner {
   background: $prof11;
+  background-size: cover;
+}
+
+.tile.tile-4096 .tile-inner {
+  background: $prof12;
+  background-size: cover;
 }
