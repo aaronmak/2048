@@ -21,6 +21,19 @@ $game-container-background: #bbada0;
 
 $transition-speed: 100ms;
 
+$prof1: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/OBOYABATLI.jpg?itok=GVGao7pR);
+$prof2: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/business/mbashshur.jpg?itok=NiL2s-Yh);
+$prof3: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/HANNAHCHANG.jpg?itok=pLwPNYti);
+$prof4: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/PCRAMA.jpg?itok=L6oYRNYr);
+$prof5: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/XSGENG.jpg?itok=BPdSk0GS);
+$prof6: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/smu/dbhave.jpeg?itok=B5otQmTi);
+$prof7: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/business/2013_archarya_abhijith_g_0.jpg?itok=IvXCM_fP);
+$prof8: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/BEGOH.jpg?itok=xfVgNY0A);
+$prof9: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/YFLIM.jpg?itok=cgehGIBi);
+$prof10: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/LDEMEESTER.jpg?itok=wZwGGoe-);
+$prof11: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/TERENCEFAN.jpg?itok=MeXvVXQF);
+$prof12: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/MICHLEE.jpg?itok=_2eJN_yV);
+
 html, body {
   margin: 0;
   padding: 0;
@@ -322,7 +335,7 @@ hr {
     font-weight: bold;
     z-index: 10;
 
-    font-size: 55px;
+    font-size: 0px;
   }
 
   // Movement transition
@@ -406,10 +419,10 @@ hr {
     color: $bright-text-color;
     background: mix(#333, $tile-gold-color, 95%);
 
-    font-size: 30px;
+    font-size: 0px;
 
     @include smaller($mobile-threshold) {
-      font-size: 10px;
+      font-size: 0px;
     }
   }
 }
@@ -531,7 +544,7 @@ hr {
 
   // Rest of the font-size adjustments in the tile class
   .tile .tile-inner {
-    font-size: 35px;
+    font-size: 1px;
   }
 
   .game-message {
@@ -546,4 +559,48 @@ hr {
       margin-top: 30px !important;
     }
   }
+}
+
+.tile.tile-2 .tile-inner {
+  background: $prof1;
+}
+
+.tile.tile-4 .tile-inner {
+  background: $prof2;
+}
+
+.tile.tile-8 .tile-inner {
+  background: $prof3;
+}
+
+.tile.tile-16 .tile-inner {
+  background: $prof4;
+}
+
+.tile.tile-32 .tile-inner {
+  background: $prof5;
+}
+
+.tile.tile-64 .tile-inner {
+  background: $prof6;
+}
+
+.tile.tile-128 .tile-inner {
+  background: $prof7;
+}
+
+.tile.tile-256 .tile-inner {
+  background: $prof8;
+}
+
+.tile.tile-512 .tile-inner {
+  background: $prof9;
+}
+
+.tile.tile-1024 .tile-inner {
+  background: $prof10;
+}
+
+.tile.tile-2048 .tile-inner {
+  background: $prof11;
 }
