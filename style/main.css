@@ -1101,3 +1101,9 @@ hr {
   background: url(http://www.smu.edu.sg/sites/default/files/styles/faculty_thumb/public/MICHLEE.jpg?itok=_2eJN_yV);
   background-size: cover;
 }
+
+/* line 624, main.scss */
+.fb-share-button {
+  float: left;
+  margin-right: 20px;
+}
